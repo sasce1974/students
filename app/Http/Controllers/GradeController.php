@@ -75,12 +75,13 @@ class GradeController extends Controller
                     'Passed' : 'Failed';
             }
 
-            if($users[$i]->board->id === 1){
-                return json_encode($data);
-            }else{
-                return $this->arrayToXML($data);
-            }
 
+
+        }
+        if($board->id === 1){
+            return json_encode($data);
+        }else{
+            return $this->arrayToXML($data);
         }
 
 
