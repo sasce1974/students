@@ -75,8 +75,6 @@ class GradeController extends Controller
                     'Passed' : 'Failed';
             }
 
-
-
         }
         if($board->id === 1){
             return json_encode($data);
