@@ -106,7 +106,7 @@ class GradeController extends Controller
 
         array_to_xml($data,$xml_data);
 
-        return $xml_data;
+        return $xml_data->asXML();
 
     }
 
